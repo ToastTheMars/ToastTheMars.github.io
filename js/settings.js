@@ -2,7 +2,7 @@
 	"use strict";
 
 	$(document).ready(function() {
-		
+
 		// ====================================================================
 
 		// Navbar position
@@ -16,7 +16,7 @@
 				$('body').css('padding-top', '0');
 			}
 		});
-		
+
 		// ====================================================================
 
 		// Smooth Scroll on Menu Click
@@ -76,24 +76,24 @@
 
 		var flag = 0;
 
-	    $(window).scroll(function() {
-	        if (flag == 1){
-	           return false;
-	        }
-	        else{
-	           var bh = $(window).height();
-	           var st = $(window).scrollTop();
-	           var el = $('.timer');
-	           var eh = el.height();
-	           if ( st >= (100 + eh) - bh ) {
-	               el.countTo({
-	                   speed: 2000,
-	                   refreshInterval: 20
-	               });
-	           }
-	           flag = 1;
-	        }
-	    });
+		$(window).scroll(function() {
+			if (flag == 1){
+				return false;
+			}
+			else{
+				var bh = $(window).height();
+				var st = $(window).scrollTop();
+				var el = $('.timer');
+				var eh = el.height();
+				if ( st >= (100 + eh) - bh ) {
+					el.countTo({
+						speed: 2000,
+						refreshInterval: 20
+					});
+				}
+				flag = 1;
+			}
+		});
 
 		// ====================================================================
 
@@ -124,32 +124,27 @@
 			window.scrollReveal = new scrollReveal({reset: true});
 		}
 
+		// ====================================================================
+
+		// YouTube Video Embed Controls
 
 		var showVideo = false;
-		var btn = $("#videoBtn");
-		var video = $("#engagementVideo");
+		var btn = $('#videoBtn');
+		var video = $('.embed-container');
 
-		video.hide();
 		btn.button('show');
 
-		$("#videoBtn").on("click", function(){
+		$('#videoBtn').on('click', function(){
 
 			if(showVideo === false){
 				showVideo = true;
 				btn.button('hide');
-				video.show();
+				video.fadeIn(1000);
 			} else {
 				showVideo = false;
 				btn.button('show');
-				video.hide();
+				video.fadeOut(1000);
 			}
 		});
-
 	})
-
-
-
-
-
-
 })(jQuery);
