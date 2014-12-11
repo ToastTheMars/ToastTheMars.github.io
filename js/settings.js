@@ -146,5 +146,13 @@
 				video.fadeOut(1000);
 			}
 		});
+
+		// ====================================================================
+
+		// Collapse Navbar on Click
+
+		$('.navbar-collapse a').click(function (e) {
+			$('.navbar-collapse').collapse('toggle');
+		});
 	})
 })(jQuery);
