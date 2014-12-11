@@ -154,5 +154,10 @@
 		$('.navbar-collapse a').click(function (e) {
 			$('.navbar-collapse').collapse('toggle');
 		});
+
+		// ====================================================================
+
+		// Show Body Content on Full Page Load
+		$('body').show();
 	})
 })(jQuery);
