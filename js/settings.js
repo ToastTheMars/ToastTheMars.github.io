@@ -139,11 +139,11 @@
 			if(showVideo === false){
 				showVideo = true;
 				btn.button('hide');
-				video.fadeIn(1000);
+				video.fadeIn(750);
 			} else {
 				showVideo = false;
 				btn.button('show');
-				video.fadeOut(1000);
+				video.fadeOut(750);
 			}
 		});
 
@@ -158,6 +158,6 @@
 		// ====================================================================
 
 		// Show Body Content on Full Page Load
-		$('body').show();
+		$('#init-wrapper').show();
 	})
 })(jQuery);
