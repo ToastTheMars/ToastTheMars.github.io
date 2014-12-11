@@ -18,8 +18,11 @@ old shitty pink: #d6516d
 =========================================================================================*/
 
 body {
-	display: none;
 	overflow-x: hidden;
+}
+
+.init-wrapper {
+	display: none;
 }
 
 .inner {
