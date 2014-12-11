@@ -21,10 +21,6 @@ body {
 	overflow-x: hidden;
 }
 
-#init-wrapper {
-	/*display: none;*/
-}
-
 .inner {
 	padding-top: 97px;
 }
